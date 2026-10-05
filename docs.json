@@ -1,0 +1,92 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "luma",
+  "name": "Speclane マニュアル",
+  "description": "Speclane Studioの一般利用者向けマニュアル。メタハーネスとしての共通操作と、その基盤を使った仕様駆動開発の実践を案内します。",
+  "colors": {
+    "primary": "#1be39b",
+    "light": "#0c8c5c",
+    "dark": "#99bbb0"
+  },
+  "logo": {
+    "light": "https://media.brand.dev/f0990523-f0de-429d-8e3c-39b1e78693bd.svg",
+    "dark": "https://media.brand.dev/f0990523-f0de-429d-8e3c-39b1e78693bd.svg"
+  },
+  "favicon": "https://media.brand.dev/31982380-75b7-4f3c-840d-088a6bd5916e.png",
+  "appearance": {
+    "default": "light"
+  },
+  "fonts": {
+    "family": "Noto Sans JP"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "基本操作",
+        "groups": [
+          {
+            "group": "はじめに",
+            "pages": [
+              "index",
+              "start/meta-harness",
+              "start/quickstart",
+              "start/workspace"
+            ]
+          },
+          {
+            "group": "AIと作業する",
+            "pages": [
+              "guides/choosing-agent",
+              "guides/chat",
+              "guides/review-comments",
+              "guides/fork-session",
+              "guides/sharing"
+            ]
+          },
+          {
+            "group": "会話と設定を管理する",
+            "pages": [
+              "guides/projects",
+              "guides/import-sessions",
+              "guides/settings"
+            ]
+          },
+          {
+            "group": "共通サポート",
+            "pages": [
+              "support/troubleshooting",
+              "support/local-start",
+              "support/glossary"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "仕様駆動開発",
+        "groups": [
+          {
+            "group": "考え方と準備",
+            "pages": [
+              "guides/spec-driven-development",
+              "guides/skills"
+            ]
+          },
+          {
+            "group": "仕様駆動開発を実践する",
+            "pages": [
+              "guides/requirements-and-decisions",
+              "guides/specifications",
+              "guides/implementation",
+              "guides/files",
+              "guides/verification",
+              "guides/change-lifecycle"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "search": {
+    "prompt": "操作や用語を検索"
+  }
+}

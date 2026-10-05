@@ -1,0 +1,101 @@
+{
+  "projectType": "saas",
+  "projectName": "Speclane Studio",
+  "projectDescription": "Speclane Studio is a meta-harness platform that unifies multiple AI agents in a single interface, enabling teams to practice specification-driven development from requirement alignment through implementation and verification.",
+  "theme": "luma",
+  "primaryColor": "#1be39b",
+  "lightColor": "#0c8c5c",
+  "darkColor": "#99bbb0",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "基本操作",
+        "groups": [
+          {
+            "group": "はじめに",
+            "pages": [
+              "index",
+              "start/meta-harness",
+              "start/quickstart",
+              "start/workspace"
+            ]
+          },
+          {
+            "group": "AIと作業する",
+            "pages": [
+              "guides/choosing-agent",
+              "guides/chat",
+              "guides/review-comments",
+              "guides/fork-session",
+              "guides/sharing"
+            ]
+          },
+          {
+            "group": "会話と設定を管理する",
+            "pages": [
+              "guides/projects",
+              "guides/import-sessions",
+              "guides/settings"
+            ]
+          },
+          {
+            "group": "共通サポート",
+            "pages": [
+              "support/troubleshooting",
+              "support/local-start",
+              "support/glossary"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "仕様駆動開発",
+        "groups": [
+          {
+            "group": "考え方と準備",
+            "pages": [
+              "guides/spec-driven-development",
+              "guides/skills"
+            ]
+          },
+          {
+            "group": "仕様駆動開発を実践する",
+            "pages": [
+              "guides/requirements-and-decisions",
+              "guides/specifications",
+              "guides/implementation",
+              "guides/files",
+              "guides/verification",
+              "guides/change-lifecycle"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Multiple AI agent support (Claude Code, Codex, etc.) through a unified meta-harness interface",
+    "Specification-driven development workflow from requirements to verification",
+    "Collaborative sessions with granular view/edit permissions and workspace file sharing",
+    "Session forking to explore alternative approaches with different AI agents",
+    "Import of existing AI tool conversation history into Studio sessions",
+    "Speclane-Skills: six specialized AI skill roles (speclane-creator, project-researcher, grilling, specs-creator, feature-coder, bdd-verifier)",
+    "Git-integrated change lifecycle with reflect, stage, commit, push, and pull operations",
+    "Design panel for viewing and editing specification documents alongside code",
+    "Project organization for grouping related sessions with default host/directory settings",
+    "GitHub integration for repository cloning and remote push/pull"
+  ],
+  "publicApiSurface": [
+    "omnigent start --server ''",
+    "omnigent server status",
+    "omnigent host status",
+    "omnigent stop",
+    "git status / git diff --cached / git commit (user-side Git workflow)",
+    "Speclane-Skills: speclane-creator, project-researcher, grilling, specs-creator, feature-coder, bdd-verifier",
+    "Studio UI: New Chat, Agent/Model/Host selection, Work Directory, Repository Copy",
+    "Studio UI: Design panel (仕様書), Files panel (ファイル), History panel (履歴), Browser panel (ブラウザ)",
+    "Session actions: duplicate (fork), share (view/edit), import, archive",
+    "History actions: Reflect (反映), Stage (確認待ち), Commit (確定), Push (プッシュ), Pull (プル)",
+    "Settings: Appearance, Keyboard Shortcuts, Sandbox Integration (GitHub connection), Session Import"
+  ]
+}
